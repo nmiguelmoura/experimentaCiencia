@@ -1,0 +1,196 @@
+[class*='tile']{
+  width:100%;
+  padding-top:20px;
+  padding-bottom:20px;
+  overflow:hidden;
+  margin:0;
+
+  h3{
+    font-size:20px;
+    font-size:1.25em;
+    text-align:center;
+    padding:0 10px 20px 10px;
+    line-height:30px;
+  }
+
+  img{
+    width:100%;
+  }
+
+  p{
+    font-size:14px;
+    font-size:0.875em;
+    line-height:24px;
+    padding:10px;
+  }
+
+  @media screen and (min-width:768px){
+    padding-top:30px;
+    padding-bottom:30px;
+
+    h3{
+      font-size:24px;
+      font-size:1.5em;
+      line-height:38px;
+      padding-bottom:40px;
+      max-width:720px;
+      margin:0 auto;
+    }
+
+    p{
+      font-size:16px;
+      font-size:1em;
+      line-height:34px;
+      padding:30px 20px 10px 10px;
+      text-align:center;
+    }
+
+    .invert-float{
+      float:right;
+    }
+  }
+
+  @media screen and (min-width:1024px){
+    h3{
+      max-width:670px;
+      font-size:28px;
+      font-size:1.75em;
+      line-height:48px;
+    }
+  }
+
+  @media screen and (min-width:1366px){
+    h3{
+      max-width:100%;
+      font-size:32px;
+      font-size:2em;
+    }
+
+    p{
+      font-size:20px;
+      font-size:1.25em;
+      line-height:44px;
+    }
+  }
+}
+
+@media screen and (min-width:1024px){
+  .tile-0, .tile-1{
+    .image-text-block p{
+      padding:80px 50px 10px 30px;
+    }
+  }
+}
+
+@media screen and (min-width:1366px){
+  .tile-0, .tile-1{
+    .image-text-block p{
+      padding:120px 80px 10px 60px;
+    }
+  }
+}
+
+.tile-0{
+  .end-note{
+    @media screen and (min-width:1024px){
+      width:600px;
+      margin:0 auto;
+    }
+
+    @media screen and (min-width:1366px){
+      width:750px;
+    }
+  }
+}
+
+.wrapper-special{
+  width:100%;
+  max-width:100%;
+  background-color:$theme-color;
+}
+
+.row-special{
+  max-width:1366px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.tile-1{
+  h3, p{
+    color:white;
+  }
+
+  .image-text-block:last-child{
+    margin-top:30px;
+  }
+
+  @media screen and (min-width:768px){
+    .image-text-block:last-child{
+      margin-top:50px;
+      margin-bottom:20px;
+    }
+  }
+}
+
+
+.tile-2{
+  .container{
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  [class*='colab']{
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+
+    &:not(:first-child){
+      margin-top:30px;
+    }
+
+    p{
+      width:100%;
+      margin:0;
+      padding:0;
+      text-align:center;
+      font-weight:700;
+      font-size:14px;
+    }
+
+    @media screen and (min-width:768px){
+      width:30%;
+      margin-left:10%;
+      margin-right:10%;
+
+      p{
+        font-size:16px;
+        font-size:1em;
+        line-height:24px;
+      }
+    }
+
+    @media screen and (min-width:1024px){
+      width:19%;
+      margin-left:3%;
+      margin-right:3%;
+      margin-top:0 !important;
+      padding-bottom:20px;
+    }
+
+    p{
+      font-size:14px;
+      font-size:0.875em;
+      line-height:24px;
+    }
+  }
+}
+
+@media screen and (min-width:768px){
+  .colab-0, .colab-1{
+    margin-top:0 !important;
+  }
+
+  .colab-2, .colab-3{
+    margin-top:40px !important;
+  }
+}

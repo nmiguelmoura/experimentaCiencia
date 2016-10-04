@@ -1,0 +1,55 @@
+header{
+  width:100%;
+  height:44px;
+
+  //logo
+  img{
+    width:42px;
+    margin:5px 10px 0 5px;
+    float:left;
+  }
+
+  //titulo do header
+  h1{
+    font-size:20px;
+    font-size:1.25em;
+    margin-top:8px;
+    color:$theme-color;
+  }
+
+  nav{
+    display:none;
+  }
+
+  @media screen and (min-width:768px){
+    height:58px;
+
+    .header-title{
+      padding:0;
+    }
+
+    img{
+      margin:6px 10px 0 10px;
+      width:56px;
+    }
+
+    h1{
+      font-size:24px;
+      font-size:1.5em;
+      margin-top:12px;
+    }
+  }
+
+  @media screen and(min-width:1024px){
+    nav{
+      display:block;
+      padding:0;
+    }
+
+    [class*='nav-btn']{
+      float:right;
+      padding:17px 10px;
+      color:$theme-color;
+    }
+  }
+}

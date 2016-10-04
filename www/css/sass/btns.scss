@@ -1,0 +1,21 @@
+.btn-type-0{
+  background-color:white;
+  color:#444444;
+  border:none;
+  font-size:12px;
+  font-size:0.75em;
+  box-shadow:0 2px 2px rgba(0,0,0,0.2);
+  height:36px;
+  cursor:pointer;
+  border-radius:2px;
+
+  &:active{
+    box-shadow:none;
+  }
+
+  @media screen and (min-width:768px){
+    height:40px;
+    font-size:16px;
+    font-size:1em;
+  }
+}

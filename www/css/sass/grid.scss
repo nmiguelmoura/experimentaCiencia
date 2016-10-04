@@ -1,0 +1,90 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing:border-box;
+}
+
+.wrapper{
+  margin:0 auto;
+}
+
+.row:after{
+  content:' ';
+  display:block;
+  clear:both;
+}
+
+//Primary grid
+//On extra-small devices, all columns match 100% width. After 768px, column width is multiple of 100/12.
+[class*="col-span"]{
+  float:left;
+  width:100%;
+}
+
+@function calc-col-width($colNumber){
+  @return ($colNumber/12)*100%;
+}
+
+@media screen and (min-width: 768px){
+  @for $i from 1 through 12{
+    .col-span-#{$i}-#{12}{
+      width:calc-col-width($i);
+      padding-left:15px;
+      padding-right:15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .wrapper{
+    max-width:1366px;
+  }
+}
+
+
+//Secondary grid
+//Specify columns for different viewports: extra-small (xs), small (sm) and medium (md).
+[class*='xs']{
+  float:left;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+@media screen and (min-width:768px){
+  [class*='sm'],[class*='md'],[class*='lg']{
+    float:left;
+    padding-left:15px;
+    padding-right:15px;
+  }
+}
+
+@for $i from 1 through 12{
+  $valWidth:calc-col-width($i);
+
+  @media screen and (max-width: 767px){
+    .xs-#{$i}-#{12}{
+      width:$valWidth;
+    }
+  }
+
+  @media screen and (min-width:768px) and (max-width:1023px){
+    .sm-#{$i}-#{12}{
+      width:$valWidth;
+    }
+  }
+
+  @media screen and (min-width:1024px) and (max-width:1199px){
+    .md-#{$i}-#{12}{
+      width:$valWidth;
+    }
+  }
+
+  @media screen and (min-width:1200px){
+    .lg-#{$i}-#{12}{
+      width:$valWidth;
+    }
+  }
+}
+
+
+
