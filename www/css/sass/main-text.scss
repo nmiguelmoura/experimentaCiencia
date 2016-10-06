@@ -1,0 +1,54 @@
+.wrapper-text{
+  .row{
+    padding:30px 10px;
+    max-width:750px;
+    margin:0 auto;
+  }
+
+  .main{
+    h4{
+      font-size:20px;
+      font-size:1.25em;
+      line-height:26px;
+      line-height:1.6em;
+      text-align:center;
+      padding-bottom:20px;
+      color:$theme-color;
+      max-width:600px;
+      margin:0 auto;
+
+      &:not(:first-child){
+        margin-top:20px;
+      }
+    }
+
+    p, li{
+      font-size:16px;
+      font-size:1em;
+      line-height:24px;
+      line-height:1.5em;
+      padding-bottom:10px;
+    }
+
+    li{
+      list-style-position:inside;
+      list-style-image: url(../assets/li.png);
+    }
+  }
+
+  @media screen and (min-width:768px){
+    .row{
+      padding:30px 10px;
+    }
+  }
+
+  @media screen and (min-width:1024px){
+    .row{
+      padding:40px 10px;
+    }
+
+    .main h4{
+      padding-bottom:30px;
+    }
+  }
+}

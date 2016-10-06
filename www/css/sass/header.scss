@@ -1,6 +1,9 @@
 header{
+  position:relative;
+  z-index:1001;
   width:100%;
   height:44px;
+  background:white;
 
   //logo
   img{
@@ -21,6 +24,43 @@ header{
     display:none;
   }
 
+  .menu-btn-off{
+    padding:0;
+    height:44px;
+    overflow:hidden;
+  }
+
+  .menu-btn-on{
+    @extend .menu-btn-off;
+    background-color:$theme-color;
+  }
+
+  .menu-img-off{
+    display:block;
+    width:44px;
+    height:44px;
+    margin:0 auto;
+    background:url(../assets/menu.png) 12px 12px no-repeat;
+
+    @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi){
+      background:url(../assets/menu@2x.png) 12px 12px no-repeat;
+      background-size:20px 20px;
+    }
+  }
+
+  .menu-img-on{
+    display:block;
+    width:40px;
+    height:40px;
+    margin:2px auto;
+    background:url(../assets/menuOn.png) 10px 10px no-repeat;
+
+    @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi){
+      background:url(../assets/menuOn@2x.png) 10px 10px no-repeat;
+      background-size:20px 20px;
+    }
+  }
+
   @media screen and (min-width:768px){
     height:58px;
 
@@ -38,6 +78,17 @@ header{
       font-size:1.5em;
       margin-top:12px;
     }
+
+    .menu-btn-off, .menu-btn-on{
+      height:58px;
+    }
+
+    .menu-img-off, .menu-img-on{
+      width:58px;
+      height:58px;
+      margin:0 auto;
+      background-position:19px 19px;
+    }
   }
 
   @media screen and(min-width:1024px){
@@ -50,6 +101,18 @@ header{
       float:right;
       padding:17px 10px;
       color:$theme-color;
+    }
+
+    .nav-btn-selected{
+      font-weight:700;
+    }
+
+    .menu-btn-off{
+      display:none;
+    }
+
+    .menu-btn-on{
+      display:none;
     }
   }
 }

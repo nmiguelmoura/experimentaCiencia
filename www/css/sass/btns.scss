@@ -19,3 +19,9 @@
     font-size:1em;
   }
 }
+
+.btn-type-1{
+  @extend .btn-type-0;
+  background-color:$theme-color;
+  color:white;
+}

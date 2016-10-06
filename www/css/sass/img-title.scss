@@ -1,4 +1,6 @@
 .img-title{
+  position:relative;
+  z-index:999;
   padding:0;
   margin:0;
   width:100%;
@@ -46,6 +48,19 @@
       width:100%;
       max-width:360px;
       margin:0 auto;
+    }
+  }
+
+  //extra breakpoint
+  @media screen and (min-width:360px){
+    h2{
+      top:calc(50% - 45px);
+    }
+  }
+
+  @media screen and (min-width:598px){
+    img{
+      width:100%;
     }
   }
 

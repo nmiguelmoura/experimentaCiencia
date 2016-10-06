@@ -1,0 +1,45 @@
+.alert-custom{
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  //para que fique acima do cabecalho, que tem z-index:1000
+  z-index:1001;
+
+  .alert-box{
+    position:fixed;
+    display:block;
+    width:100%;
+    min-height:100px;
+    top:calc(50% - 50px);
+    background-color:#EEEEEE;
+    //para ficar acima do fadded-screen
+    z-index:1002;
+
+    p{
+      padding:10px;
+      font-size:14em;
+      font-size:0.875em;
+      line-height:24px;
+      line-height:1.5em;
+    }
+
+    button{
+      width:150px;
+      margin-top:10px;
+      margin-bottom:20px;
+      margin-left:calc(50% - 75px);
+    }
+  }
+
+  @media screen and (min-width:768px){
+    .alert-box{
+      max-width:350px;
+      left:calc(50% - 175px);
+      top:300px;
+    }
+  }
+}
+

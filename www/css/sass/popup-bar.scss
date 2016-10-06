@@ -1,0 +1,34 @@
+.wrapper-popup-bar{
+  position:relative;
+  display:none;
+  z-index:1000;
+
+  .popup-bar{
+    background-color:$theme-color;
+    display:block;
+    width:100%;
+    position:absolute;
+    border-bottom:1px solid white;
+
+    .popup-search{
+      display:none;
+      padding:10px;
+    }
+
+    .popup-menu{
+      display:none;
+    }
+
+    .popup-login{
+      display:none;
+      padding:10px;
+    }
+  }
+
+  @media screen and (min-width:768px){
+    .popup-bar{
+      width:40%;
+      right:0;
+    }
+  }
+}

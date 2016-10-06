@@ -8,7 +8,8 @@ module.exports=function(grunt){
                     sourcemap:'none'
                 },
                 files:{
-                    'www/css/indexStyle.css':'www/css/sass/index-style.scss'
+                    'www/css/indexStyle.css':'www/css/sass/index-style.scss',
+                    'www/css/contentStyle.css':'www/css/sass/content-page-style.scss'
                 }
             }
         },
@@ -18,7 +19,11 @@ module.exports=function(grunt){
             },
             build:{
                 files:{
-
+                    'www/src/build/main.min.js':[
+                        'www/src/Alerts.js',
+                        'www/src/PopupBar.js',
+                        'www/src/Main.js'
+                    ]
                 }
             }
         }

@@ -1,0 +1,31 @@
+.popup-menu{
+  ul{
+    text-align:center;
+    font-size:14px;
+    font-size:0.875em;
+    list-style:none;
+  }
+
+  li{
+    color:white;
+    padding:14px 0;
+    //border-bottom:1px solid white;
+
+    &:hover,&:active{
+      background-color:white;
+      color:$theme-color;
+    }
+  }
+
+  @media screen and (min-width:768px){
+    li{
+      border-bottom:none;
+    }
+  }
+
+  @media screen and (min-width:1024px){
+    -moz-column-count:2;
+    -webkit-column-count:2;
+    column-count:2;
+  }
+}
