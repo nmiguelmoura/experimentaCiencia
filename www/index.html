@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Experimenta Ciência</title>
-    <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
-    <script src="src/libs/respond.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" media="bogus">
+    <link rel="stylesheet" type="text/css" href="css/indexStyle.css" media="bogus">
 </head>
 <body>
     <header>
@@ -39,12 +38,12 @@
         <div class="popup-bar">
             <div class="popup-menu">
                 <ul>
-                    <a href="objetivos.html"><li>Objetivos</li></a>
-                    <a href="planificacao.html"><li>Planificação</li></a>
-                    <a href="municipios.html"><li>Municípios</li></a>
-                    <a href="escolas.html"><li>Escolas</li></a>
-                    <a href="documentos.html"><li>Documentos</li></a>
-                    <a href="informacoes.html"><li>+ Informações</li></a>
+                    <li><a href="objetivos.html">Objetivos</a></li>
+                    <li><a href="planificacao.html">Planificação</a></li>
+                    <li><a href="municipios.html">Municípios</a></li>
+                    <li><a href="escolas.html">Escolas</a></li>
+                    <li><a href="documentos.html">Documentos</a></li>
+                    <li><a href="informacoes.html">+ Informações</a></li>
                 </ul>
             </div>
         </div>
@@ -63,7 +62,12 @@
                     <h3>Um programa de apoio ao ensino experimental das Ciências no Ensino Básico</h3>
                     <div class="row image-text-block">
                         <div class="sm-6-12 md-6-12 lg-6-12">
-                            <img src="assets/index/tile_0.jpg" alt="Apoio ao ensino experimental das Ciências no Ensino Básico">
+                            <picture>
+                                <source srcset="assets/index/tile_0-small.jpg 1x, assets/index/tile_0-small_@2x.jpg 2x" media="(max-width:768px)">
+                                <source srcset="assets/index/tile_0-medium.jpg 1x, assets/index/tile_0-medium_@2x.jpg 2x" media="(max-width:1024px)">
+                                <source srcset="assets/index/tile_0-big.jpg 1x, assets/index/tile_0-big_@2x.jpg 2x" media="(min-width:1025px)">
+                                <img src="assets/index/tile_0-big.jpg" alt="Apoio ao ensino experimental das Ciências no Ensino Básico">
+                            </picture>
                         </div>
                         <p class="sm-6-12 md-6-12 lg-6-12">Uma proposta da Universidade do Porto/Casa das Ciências para a valorização da componente experimental do Estudo do Meio no Ensino Básico.</p>
                     </div>
@@ -79,13 +83,23 @@
                     <h3>O que propomos?</h3>
                     <div class="row image-text-block">
                         <div class="sm-6-12 md-6-12 lg-6-12 invert-float">
-                            <img src="assets/index/tile_1.jpg" alt="Realização de atividades experimentais na sala de aula">
+                            <picture>
+                                <source srcset="assets/index/tile_1-small.jpg 1x, assets/index/tile_1-small_@2x.jpg 2x" media="(max-width:768px)">
+                                <source srcset="assets/index/tile_1-medium.jpg 1x, assets/index/tile_1-medium_@2x.jpg 2x" media="(max-width:1024px)">
+                                <source srcset="assets/index/tile_1-big.jpg 1x, assets/index/tile_1-big_@2x.jpg 2x" media="(min-width:1025px)">
+                                <img src="assets/index/tile_1-big.jpg" alt="Realização de atividades experimentais na sala de aula">
+                            </picture>
                         </div>
                         <p  class="sm-6-12 md-6-12 lg-6-12">A realização de atividades experimentais na sala de aula com o apoio de um monitor formado e orientado pela Universidade do Porto.</p>
                     </div>
                     <div class="row image-text-block">
                         <div class="sm-6-12 md-6-12 lg-6-12">
-                            <img src="assets/index/tile_2.jpg" alt="25 horas de formação sobre o ensino experimental das ciências">
+                            <picture>
+                                <source srcset="assets/index/tile_2-small.jpg 1x, assets/index/tile_2-small_@2x.jpg 2x" media="(max-width:768px)">
+                                <source srcset="assets/index/tile_2-medium.jpg 1x, assets/index/tile_2-medium_@2x.jpg 2x" media="(max-width:1024px)">
+                                <source srcset="assets/index/tile_2-big.jpg 1x, assets/index/tile_2-big_@2x.jpg 2x" media="(min-width:1025px)">
+                                <img src="assets/index/tile_1-big.jpg" alt="25 horas de formação sobre o ensino experimental das ciências">
+                            </picture>
                         </div>
                         <p  class="sm-6-12 md-6-12 lg-6-12">Um módulo de 25 horas de formação sobre o ensino experimental das ciências proposto aos professores das turmas participantes.</p>
                     </div>
@@ -123,13 +137,13 @@
             <div class="footer-top tile"><!--inherits styles from tile class-->
                 <h3>Saiba mais sobre este projeto</h3>
                 <div class="footer-btns">
-                    <a href="objetivos.html" class="a-btn"><button class="btn-type-0">Objetivos</button></a>
-                    <a href="planificacao.html" class="a-btn"><button class="btn-type-0">Planificação</button></a>
-                    <a href="municipios.html" class="a-btn"><button class="btn-type-0">Municípios</button></a>
-                    <a href="escolas.html" class="a-btn"><button class="btn-type-0">Escolas</button></a>
-                    <div class="spacer a-btn"></div>
-                    <a href="documentos.html" class="a-btn"><button class="btn-type-0">Documentos</button></a>
-                    <a href="informacoes.html" class="a-btn"><button class="btn-type-0">+ Informações</button></a>
+                    <a href="objetivos.html" class="btn-type-0"><p>Objetivos</p></a>
+                    <a href="planificacao.html" class="btn-type-0"><p>Planificação</p></a>
+                    <a href="municipios.html" class="btn-type-0"><p>Municípios</p></a>
+                    <a href="escolas.html" class="btn-type-0"><p>Escolas</p></a>
+                    <div class="spacer btn-type-0"></div>
+                    <a href="documentos.html" class="btn-type-0"><p>Documentos</p></a>
+                    <a href="informacoes.html" class="btn-type-0"><p>+ Informações</p></a>
                 </div>
             </div>
         </div>
@@ -159,6 +173,10 @@
             </div>
         </div>
     </footer>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
     <script type="text/javascript" src="src/build/main.min.js"></script>
+    <script src="src/libs/respond.min.js"></script>
+    <script src="src/libs/picturefill.min.js"></script>
 </body>
 </html>

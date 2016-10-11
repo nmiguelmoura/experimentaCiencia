@@ -26,10 +26,57 @@ module.exports=function(grunt){
                     ]
                 }
             }
+        },
+        responsive_images: {
+            dev: {
+                options: {
+                    engine: 'im',
+                    sizes: [
+                        {
+                            name:'big_@2x',
+                            width: 1306,
+                            quality:60
+                            //suffix: 'small'
+                        },
+                        {
+                            name:'big',
+                            width: 653,
+                            quality:60
+                        },
+                        {
+                            name:'medium_@2x',
+                            width: 964,
+                            quality:30
+                        },
+                        {
+                            name:'medium',
+                            width: 482,
+                            quality:30
+                        },
+                        {
+                            name:'small_@2x',
+                            width: 708,
+                            quality:30
+                        },
+                        {
+                            name:'small',
+                            width: 354,
+                            quality:30
+                        }
+                    ]
+                },
+                files: [{
+                    expand: true,
+                    src: ['*.{gif,jpg,png}'],
+                    cwd: 'www/assets_or/',
+                    dest: 'www/assets/index'
+                }]
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.registerTask('default',['sass','uglify']);
+    //grunt.loadNpmTasks('grunt-responsive-images');
+    grunt.registerTask('default',['sass','uglify'/*,'responsive_images'*/]);
 };

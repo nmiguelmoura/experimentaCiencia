@@ -36,6 +36,17 @@
     }
   }
 
+  .a-doc {
+    padding: 2px;
+    margin: 0 10px;
+    color: $theme-color;
+  }
+
+  .a-doc:hover {
+    background-color: $theme-color;
+    color: white;
+  }
+
   @media screen and (min-width:768px){
     .row{
       padding:30px 10px;
